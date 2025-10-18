@@ -1,0 +1,15 @@
+# .htaccess file for Boarding Gigs Platform
+
+# Suppress PHP warnings for deprecated functions
+php_flag display_errors off
+php_flag display_startup_errors off
+
+# Default document
+DirectoryIndex login.php index.php
+
+# File upload settings
+php_value upload_max_filesize 10M
+php_value post_max_size 10M
+
+# Enable sessions
+php_flag session.auto_start off
